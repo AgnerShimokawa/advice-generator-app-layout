@@ -1,0 +1,101 @@
+main {
+    min-width: 320px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.advice-card {
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 480px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.advice-number {
+    margin-top: 30px;
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.advice {
+    color: hsl(193, 38%, 86%);
+    padding: 20px 40px 30px 40px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.button {
+    background-color: hsl(150, 100%, 66%);
+    padding: 20px;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(25px);
+}
+
+.button:hover{
+    background-color: hsl(150, 100%, 82%);
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .advice-card {
+        width: 350px;
+        height: 320px;
+    }
+
+    .advice-number {
+        padding: 10px;
+    }
+
+    .advice {
+        padding: 20px;
+    }
+
+    .button {
+        transform: translateY(25px);
+    }
+}
+
+@media (max-width: 340px) {
+    .advice-card {
+        width: 300px;
+        height: 280px;
+    }
+
+    .advice-number {
+        margin-top: 15px;
+    }
+
+    .advice {
+        padding: 10px 40px 30px 40px;
+        font-size: 20px;
+    }
+
+    .divider-image {
+        transform: scaleX(-90%);
+    }
+
+    .button {
+        transform: translateY(20px);
+    }
+}
