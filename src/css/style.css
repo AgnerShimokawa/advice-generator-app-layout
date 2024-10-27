@@ -17,7 +17,7 @@ body {
     height: 100%;
 }
 
-.advice-card {
+.container .advice-card {
     background-color: hsl(217, 19%, 24%);
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ body {
     border-radius: 15px;
 }
 
-.advice-number {
+.container .advice-card .advice-number {
     margin-top: 30px;
     color: hsl(150, 100%, 66%);
     text-transform: uppercase;
@@ -36,15 +36,26 @@ body {
     letter-spacing: 2px;
 }
 
-.advice {
+.container .advice-card .advice {
     color: hsl(193, 38%, 86%);
-    padding: 20px 40px 30px 40px;
+    margin: 20px 40px 30px 40px;
     font-size: 25px;
     font-weight: 800;
     text-align: center;
 }
 
-.button {
+.container .advice-card .long-advice {
+    font-size: 23px;
+    margin: 20px 20px 35px 20px;
+}
+
+.container .advice-card {
+    font-size: 27px;
+    margin-bottom: 40px;
+}
+
+
+.container .advice-card .button {
     background-color: hsl(150, 100%, 66%);
     padding: 20px;
     border: 0;
@@ -52,50 +63,58 @@ body {
     transform: translateY(25px);
 }
 
-.button:hover{
+.container .advice-card .button.short-advice {
+    transform: translateY(35px);
+}
+
+.container .advice-card .button.long-advice-button {
+    transform: translateY(15px);
+}
+
+.container .advice-card .button:hover{
     background-color: hsl(150, 100%, 82%);
     cursor: pointer;
 }
 
 @media (max-width: 500px) {
-    .advice-card {
+    .container .advice-card {
         width: 350px;
         height: 320px;
     }
 
-    .advice-number {
+    .container .advice-card .advice-number {
         padding: 10px;
     }
 
-    .advice {
+    .container .advice-card .advice {
         padding: 20px;
     }
 
-    .button {
+    .container .advice-card .button {
         transform: translateY(25px);
     }
 }
 
 @media (max-width: 340px) {
-    .advice-card {
+    .container .advice-card {
         width: 300px;
         height: 280px;
     }
 
-    .advice-number {
+    .container .advice-card  .advice-number {
         margin-top: 15px;
     }
 
-    .advice {
+    .container .advice-card .advice {
         padding: 10px 40px 30px 40px;
         font-size: 20px;
     }
 
-    .divider-image {
+    .container .advice-card .divider-image {
         transform: scaleX(-90%);
     }
 
-    .button {
+    .container .advice-card .button {
         transform: translateY(20px);
     }
 }
